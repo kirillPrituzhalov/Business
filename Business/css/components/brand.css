@@ -1,0 +1,92 @@
+.main__brand {
+  background-color: #fff;
+  padding: 100px 0; }
+  @media (max-width: 700px) {
+    .main__brand {
+      padding: 40px 0 90px; } }
+  .main__brand .content-brand {
+    max-width: 1365px; }
+    .main__brand .content-brand .main__brand-headline {
+      border: 1px solid #cfcfcf;
+      border-radius: 60px;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 100px; }
+      .main__brand .content-brand .main__brand-headline h2 {
+        font-size: 64px;
+        margin-bottom: 40px; }
+      .main__brand .content-brand .main__brand-headline button {
+        font-size: 20px; }
+    .main__brand .content-brand section {
+      display: flex;
+      align-items: center;
+      margin-bottom: 100px; }
+      .main__brand .content-brand section .main__brand-section-hadline {
+        max-width: 822px;
+        margin-right: 33px; }
+        .main__brand .content-brand section .main__brand-section-hadline h2 {
+          font-size: 96px;
+          margin-bottom: 20px; }
+        .main__brand .content-brand section .main__brand-section-hadline p {
+          font-size: 20px;
+          max-width: 537px; }
+      .main__brand .content-brand section .main__brand-section-social {
+        min-height: 182px;
+        display: flex;
+        align-items: start; }
+        .main__brand .content-brand section .main__brand-section-social a {
+          display: block;
+          transition: opacity 0.5s; }
+          .main__brand .content-brand section .main__brand-section-social a:hover {
+            opacity: 0.6; }
+          .main__brand .content-brand section .main__brand-section-social a:nth-child(2), .main__brand .content-brand section .main__brand-section-social a:nth-child(4) {
+            align-self: flex-end; }
+          .main__brand .content-brand section .main__brand-section-social a:not(:last-child) {
+            margin-right: 40px; }
+    .main__brand .content-brand .main__brand-brands {
+      display: flex; }
+      .main__brand .content-brand .main__brand-brands div:not(:last-child) {
+        margin-right: 90px; }
+    @media (max-width: 1400px) {
+      .main__brand .content-brand .main__brand-brands {
+        flex-wrap: wrap;
+        justify-content: center; }
+        .main__brand .content-brand .main__brand-brands div {
+          margin-bottom: 30px; } }
+    @media (max-width: 1050px) {
+      .main__brand .content-brand .main__brand-headline {
+        margin-bottom: 40px; }
+      .main__brand .content-brand section {
+        margin-bottom: 90px;
+        flex-direction: column; }
+        .main__brand .content-brand section .main__brand-section-hadline {
+          margin-bottom: 20px; } }
+    @media (max-width: 700px) {
+      .main__brand .content-brand .main__brand-headline {
+        padding: 40px 20px; }
+        .main__brand .content-brand .main__brand-headline h2 {
+          font-size: 40px;
+          text-align: center; }
+      .main__brand .content-brand section {
+        margin-bottom: 90px;
+        flex-direction: column; }
+        .main__brand .content-brand section .main__brand-section-hadline {
+          margin-right: 0; }
+          .main__brand .content-brand section .main__brand-section-hadline h2 {
+            font-size: 40px; }
+        .main__brand .content-brand section .main__brand-section-social {
+          min-height: 129px; }
+          .main__brand .content-brand section .main__brand-section-social a:not(:last-child) {
+            margin-right: 28px; } }
+    @media (max-width: 500px) {
+      .main__brand .content-brand .main__brand-headline button {
+        max-width: 100%; }
+      .main__brand .content-brand .main__brand-brands {
+        justify-content: flex-start; }
+        .main__brand .content-brand .main__brand-brands div:not(:last-child) {
+          margin-right: 0px; }
+        .main__brand .content-brand .main__brand-brands div:nth-child(1), .main__brand .content-brand .main__brand-brands div:nth-child(3) {
+          margin-right: 40px; } }

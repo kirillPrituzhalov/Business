@@ -1,0 +1,78 @@
+header .header__wrapper-menu {
+  background-color: #ffaa4c; }
+  header .header__wrapper-menu nav {
+    display: flex; }
+    header .header__wrapper-menu nav button {
+      display: block;
+      color: #000;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background: transparent;
+      transition: all 0.5s; }
+      header .header__wrapper-menu nav button span {
+        padding: 9px 40px;
+        font-size: 16px;
+        display: block; }
+      header .header__wrapper-menu nav button:hover {
+        background-color: #181818;
+        color: #fff; }
+    header .header__wrapper-menu nav .active {
+      background-color: #181818;
+      color: #fff; }
+
+header .header__wrapper-logo {
+  width: 100%;
+  background: #181818;
+  z-index: 3; }
+  header .header__wrapper-logo .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 16px; }
+
+header .btn-burger {
+  display: none; }
+
+header .burger-modal {
+  transition: all 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 16px;
+  z-index: 3;
+  transform: translate(100%, 0%); }
+  header .burger-modal.active {
+    transform: translate(0%, 0%); }
+  header .burger-modal .btn-close {
+    background: transparent;
+    align-self: end; }
+  header .burger-modal .btn-contact {
+    margin: 141px 0 177px;
+    max-width: 100%; }
+  header .burger-modal ul {
+    display: flex;
+    flex-direction: column; }
+    header .burger-modal ul li:not(:last-child) {
+      margin-bottom: 16px; }
+    header .burger-modal ul li a {
+      display: inline-block;
+      font-size: 20px;
+      color: #fff; }
+
+@media (max-width: 500px) {
+  header .content {
+    padding: 0; }
+    header .content .logo svg {
+      max-width: 124px; }
+    header .content .btn-burger {
+      display: block;
+      background: transparent; }
+    header .content .btn-contact {
+      display: none; } }

@@ -1,0 +1,91 @@
+footer {
+  padding: 40px 0 20px; }
+  @media (max-width: 650px) {
+    footer {
+      padding: 20px 0 20px; } }
+  footer .content-footer .footer__top-section {
+    display: flex;
+    justify-content: space-between; }
+    footer .content-footer .footer__top-section .footer__top-section-left {
+      max-width: 562px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      footer .content-footer .footer__top-section .footer__top-section-left nav > a:not(:last-child) {
+        margin-right: 40px; }
+      footer .content-footer .footer__top-section .footer__top-section-left nav a {
+        font-size: 20px;
+        color: #fff;
+        transition: opacity 0.4s; }
+        footer .content-footer .footer__top-section .footer__top-section-left nav a:hover {
+          opacity: 0.6; }
+      footer .content-footer .footer__top-section .footer__top-section-left nav div {
+        display: none; }
+    footer .content-footer .footer__top-section .footer__top-section-right {
+      max-width: 632px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between; }
+      footer .content-footer .footer__top-section .footer__top-section-right button {
+        font-size: 20px; }
+      footer .content-footer .footer__top-section .footer__top-section-right div a {
+        transition: opacity 0.4s; }
+        footer .content-footer .footer__top-section .footer__top-section-right div a:hover {
+          opacity: 0.7; }
+      footer .content-footer .footer__top-section .footer__top-section-right div img:first-child {
+        margin-right: 20px; }
+  footer .content-footer .footer__bottom-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    border-top: 2px solid #444;
+    padding-top: 20px; }
+    footer .content-footer .footer__bottom-section p {
+      color: #b9b9b9;
+      font-size: 14px; }
+    footer .content-footer .footer__bottom-section div a {
+      text-decoration: underline;
+      color: #b9b9b9;
+      font-size: 14px; }
+      footer .content-footer .footer__bottom-section div a:not(:last-child) {
+        margin-right: 20px; }
+  @media (max-width: 1210px) {
+    footer .content-footer .footer__top-section {
+      flex-direction: column;
+      align-items: center; } }
+  @media (max-width: 650px) {
+    footer .content-footer .footer__top-section .footer__top-section-left {
+      flex-direction: column;
+      align-items: flex-start; }
+      footer .content-footer .footer__top-section .footer__top-section-left .logo-footer {
+        margin-bottom: 40px; }
+        footer .content-footer .footer__top-section .footer__top-section-left .logo-footer svg {
+          max-width: 124px;
+          height: 39px; }
+      footer .content-footer .footer__top-section .footer__top-section-left nav {
+        display: flex;
+        flex-direction: column; }
+        footer .content-footer .footer__top-section .footer__top-section-left nav > a:not(:last-child) {
+          margin-right: 0px; }
+        footer .content-footer .footer__top-section .footer__top-section-left nav a:not(:last-child) {
+          margin-bottom: 16px; }
+        footer .content-footer .footer__top-section .footer__top-section-left nav div {
+          display: flex;
+          flex-direction: column; }
+          footer .content-footer .footer__top-section .footer__top-section-left nav div a {
+            margin-bottom: 16px; }
+    footer .content-footer .footer__top-section .footer__top-section-right {
+      flex-direction: column; }
+      footer .content-footer .footer__top-section .footer__top-section-right button {
+        margin-bottom: 40px;
+        margin-top: 24px; }
+      footer .content-footer .footer__top-section .footer__top-section-right div {
+        display: flex;
+        flex-direction: column; }
+        footer .content-footer .footer__top-section .footer__top-section-right div a:first-child {
+          margin-bottom: 20px; }
+    footer .content-footer .footer__bottom-section {
+      margin-top: 40px; }
+      footer .content-footer .footer__bottom-section div {
+        display: none; } }

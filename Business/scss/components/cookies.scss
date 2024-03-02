@@ -1,0 +1,89 @@
+.cookies {
+  transition: all 0.5s;
+  bottom: 40px;
+  transform: scale(1);
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  &.active {
+    transform: scale(0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .content-cookies {
+    & > div {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      border-radius: 16px;
+      position: relative;
+      width: 100%;
+      min-height: 117px;
+      max-width: 1285px;
+      padding: 30px;
+
+      svg {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        path {
+          cursor: pointer;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        max-width: 783px;
+        font-weight: 300;
+      }
+      .cookies__btn-block {
+        margin-right: 30px;
+        max-width: 272px;
+        width: 100%;
+        margin-left: 10px;
+
+        .btn-cookeis {
+          display: inline-block;
+          max-width: 124px;
+          width: 100%;
+        }
+        .btn-accept {
+          margin-right: 20px;
+        }
+        .btn-decline {
+          color: #000;
+          background-color: #fff;
+          &:hover {
+            color: #fff;
+            background-color: #000;
+          }
+        }
+      }
+    }
+    @media (max-width: 925px) {
+      div {
+        flex-direction: column;
+        .cookies__btn-block {
+          margin: 20px auto 0;
+        }
+      }
+    }
+    @media (max-width: 450px) {
+      div {
+        .cookies__btn-block {
+          flex-direction: column;
+          display: flex;
+          margin: 0;
+          margin-top: 40px;
+          max-width: 100%;
+          .btn-cookeis {
+            max-width: 100%;
+          }
+          .btn-accept {
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

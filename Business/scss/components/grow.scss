@@ -1,0 +1,280 @@
+.main__grow {
+  padding-bottom: 80px;
+
+  .main__grow-headline {
+    margin-bottom: 70px;
+    text-align: center;
+    color: #fff;
+    h2 {
+      font-size: 64px;
+    }
+    p {
+      font-weight: 600;
+      font-size: 36px;
+      span {
+        position: relative;
+        &::before {
+          content: '';
+          position: absolute;
+          width: 106%;
+          height: 79%;
+          background-color: #a64ced;
+          border-radius: 30px;
+          transform: rotate(-1.69deg);
+          z-index: -1;
+          bottom: 0px;
+          left: -6px;
+        }
+      }
+    }
+  }
+  @media (max-width: 550px) {
+    padding-bottom: 60px;
+    .main__grow-headline {
+      max-width: 351px;
+      margin: 0 auto 40px;
+      h2 {
+        font-size: 40px;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 23px;
+        br {
+          display: none;
+        }
+        span {
+          &::before {
+            width: 103%;
+            left: -2px;
+          }
+        }
+      }
+    }
+  }
+  section {
+    & > div {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    article {
+      background-color: #fff;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+    .main__grow-top {
+      .main__grow-top-block1,
+      .main__grow-top-block2 {
+        display: flex;
+
+        max-height: 362px;
+        min-height: 362px;
+        h3 {
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      .main__grow-top-block1 {
+        max-width: 733px;
+        margin-right: 20px;
+        width: 100%;
+        img {
+          max-height: 362px;
+        }
+        div {
+          max-width: 364px;
+          margin-top: 40px;
+        }
+      }
+      .main__grow-top-block2 {
+        max-width: 547px;
+        width: 100%;
+        position: relative;
+
+        &::before {
+          content: '';
+          width: 72px;
+          height: 64px;
+          display: block;
+          left: 72px;
+          bottom: 0;
+          position: absolute;
+          background: url('/assets/img/grow/bag-green.webp') 50% 50% no-repeat;
+        }
+        &::after {
+          content: '';
+          width: 93px;
+          height: 86px;
+          display: block;
+          right: 60px;
+          bottom: 0;
+          position: absolute;
+          background: url('/assets/img/grow/bag-orange.webp') 50% 50% no-repeat;
+        }
+        img {
+          position: absolute;
+          right: 0;
+          top: 80px;
+        }
+        padding: 40px;
+        div {
+          max-width: 416px;
+        }
+      }
+    }
+    .main__grow-bottom {
+      .main__grow-bottom-block1,
+      .main__grow-bottom-block2 {
+        display: flex;
+        max-height: 362px;
+        min-height: 362px;
+        picture {
+          align-self: end;
+        }
+        h3 {
+          font-size: 48px;
+          font-weight: 600;
+          margin-bottom: 20px;
+        }
+        p {
+          font-size: 20px;
+        }
+      }
+      .main__grow-bottom-block1 {
+        max-width: 547px;
+        width: 100%;
+        position: relative;
+        margin-right: 20px;
+        p {
+          max-width: 308px;
+        }
+
+        &::after {
+          content: '';
+          width: 202px;
+          height: 83px;
+          display: block;
+          right: 0;
+          bottom: 0;
+          position: absolute;
+          background: url('/assets/img/grow/supercharge-loyalty.webp') 50% 50%
+            no-repeat;
+        }
+        img {
+          position: absolute;
+          right: 0;
+          top: 80px;
+        }
+        padding: 40px;
+        div {
+          max-width: 440px;
+        }
+      }
+      .main__grow-bottom-block2 {
+        max-width: 733px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 40px;
+        padding-bottom: 0;
+        div {
+          max-width: 404px;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      & > div {
+        flex-direction: column;
+        margin-bottom: 0;
+        .main__grow-aticle-block {
+          margin-bottom: 20px;
+          max-width: 100% !important;
+          border-radius: 20px;
+        }
+      }
+    }
+    @media (max-width: 750px) {
+      .main__grow-top {
+        .main__grow-top-block1 {
+          max-height: 362px;
+          flex-direction: column-reverse;
+          div {
+            padding: 0 15px;
+            margin-top: 0;
+            h3 {
+              font-size: 32px;
+              margin-bottom: 16px;
+              font-weight: 700;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 550px) {
+      .main__grow-top {
+        .main__grow-top-block2 {
+          max-height: 333px;
+          padding: 20px;
+          div {
+            padding: 0;
+            margin-top: 0;
+            h3 {
+              font-size: 32px;
+              margin-bottom: 16px;
+              font-weight: 700;
+            }
+            p {
+              font-size: 16px;
+            }
+          }
+          &::after {
+            right: 115px;
+          }
+          &::before {
+            left: 10px;
+          }
+          img {
+            top: 201px;
+          }
+        }
+      }
+      .main__grow-bottom {
+        .main__grow-bottom-block1 {
+          min-height: 313px;
+          padding: 20px;
+          h3 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+        .main__grow-bottom-block2 {
+          min-height: 395px;
+          flex-direction: column;
+          padding: 20px;
+          padding-bottom: 0;
+          h3 {
+            font-size: 32px;
+            margin-bottom: 16px;
+            font-weight: 700;
+          }
+          p {
+            font-size: 16px;
+          }
+          picture {
+            margin-right: 35px;
+          }
+        }
+      }
+    }
+  }
+}

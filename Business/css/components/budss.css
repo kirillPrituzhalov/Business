@@ -1,0 +1,71 @@
+.main__budss {
+  margin: 100px 0;
+  background: url("/assets/img/budss/background.png") 0 100% no-repeat;
+  color: #fff; }
+  .main__budss h2 {
+    font-size: 96px;
+    margin-bottom: 80px; }
+  .main__budss article {
+    display: flex;
+    justify-content: space-between; }
+    .main__budss article .main__budss-column1 p {
+      max-width: 397px;
+      font-size: 36px;
+      font-weight: 600; }
+      .main__budss article .main__budss-column1 p span {
+        position: relative; }
+        .main__budss article .main__budss-column1 p span::before {
+          content: '';
+          position: absolute;
+          width: 106%;
+          height: 79%;
+          background-color: #a64ced;
+          border-radius: 30px;
+          transform: rotate(-1.69deg);
+          z-index: -1;
+          bottom: 0px;
+          left: -6px; }
+    .main__budss article .main__budss-column2 {
+      max-width: 727px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 70px;
+      margin-bottom: 15px; }
+      .main__budss article .main__budss-column2 div {
+        display: flex;
+        flex-direction: column; }
+        .main__budss article .main__budss-column2 div h4 {
+          margin: 10px 0 20px;
+          font-size: 48px; }
+        .main__budss article .main__budss-column2 div p {
+          font-size: 24px; }
+  @media (max-width: 1200px) {
+    .main__budss {
+      margin: 40px 0;
+      background: none; }
+      .main__budss h2 {
+        text-align: center; }
+      .main__budss article {
+        align-items: center;
+        flex-direction: column; }
+        .main__budss article .main__budss-column1 {
+          margin-bottom: 40px; } }
+  @media (max-width: 1200px) and (max-width: 630px) {
+    .main__budss h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+      text-align: start; }
+    .main__budss article {
+      align-items: self-start; }
+      .main__budss article .main__budss-column1 p {
+        font-size: 24px;
+        max-width: 273px; }
+      .main__budss article .main__budss-column2 {
+        grid-template-columns: 1fr;
+        gap: 60px; }
+        .main__budss article .main__budss-column2 div h4 {
+          font-size: 32px; }
+          .main__budss article .main__budss-column2 div h4 br {
+            display: none; }
+        .main__budss article .main__budss-column2 div p {
+          font-size: 16px; } }

@@ -1,0 +1,43 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
+}
+.slides-container {
+  display: flex;
+}
+.slide {
+  min-width: 100%;
+  transition: transform 0.5s ease;
+}
+.control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: #fff;
+  border: none;
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.dots {
+  text-align: center;
+}
+.dot {
+  display: inline-block;
+  cursor: pointer;
+  padding: 5px;
+  margin-right: 5px;
+  background-color: #ccc;
+}
+.dot.active {
+  background-color: #333;
+}
+img {
+  width: 100%;
+}

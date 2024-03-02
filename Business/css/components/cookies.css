@@ -1,0 +1,64 @@
+.cookies {
+  transition: all 0.5s;
+  bottom: 40px;
+  transform: scale(1);
+  position: fixed;
+  z-index: 3;
+  width: 100%; }
+  .cookies.active {
+    transform: scale(0.5);
+    opacity: 0;
+    visibility: hidden; }
+  .cookies .content-cookies > div {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    position: relative;
+    width: 100%;
+    min-height: 117px;
+    max-width: 1285px;
+    padding: 30px; }
+    .cookies .content-cookies > div svg {
+      position: absolute;
+      top: 16px;
+      right: 16px; }
+      .cookies .content-cookies > div svg path {
+        cursor: pointer; }
+    .cookies .content-cookies > div p {
+      font-size: 20px;
+      max-width: 783px;
+      font-weight: 300; }
+    .cookies .content-cookies > div .cookies__btn-block {
+      margin-right: 30px;
+      max-width: 272px;
+      width: 100%;
+      margin-left: 10px; }
+      .cookies .content-cookies > div .cookies__btn-block .btn-cookeis {
+        display: inline-block;
+        max-width: 124px;
+        width: 100%; }
+      .cookies .content-cookies > div .cookies__btn-block .btn-accept {
+        margin-right: 20px; }
+      .cookies .content-cookies > div .cookies__btn-block .btn-decline {
+        color: #000;
+        background-color: #fff; }
+        .cookies .content-cookies > div .cookies__btn-block .btn-decline:hover {
+          color: #fff;
+          background-color: #000; }
+  @media (max-width: 925px) {
+    .cookies .content-cookies div {
+      flex-direction: column; }
+      .cookies .content-cookies div .cookies__btn-block {
+        margin: 20px auto 0; } }
+  @media (max-width: 450px) {
+    .cookies .content-cookies div .cookies__btn-block {
+      flex-direction: column;
+      display: flex;
+      margin: 0;
+      margin-top: 40px;
+      max-width: 100%; }
+      .cookies .content-cookies div .cookies__btn-block .btn-cookeis {
+        max-width: 100%; }
+      .cookies .content-cookies div .cookies__btn-block .btn-accept {
+        margin-bottom: 20px; } }
